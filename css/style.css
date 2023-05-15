@@ -7,12 +7,11 @@
     text-decoration: none;
 }
 
-/*
 #wrap {
-    width: 100%;
+    width: 50%;
     margin: 0 auto;
+    position: relative;
 }
-*/
 
 header {
     background: #222;
@@ -30,7 +29,7 @@ ul.main-nav{
     background: #222;
     border-width: 0.1rem 0rem 0rem 0rem;
     border-style: solid;
-    border-color: #dcc8dc;
+    border-color: #fff;
     justify-content: center;
     display:flex;
 }
@@ -68,11 +67,23 @@ ul.article li {
     border-color: #222;
 }
 
-div {
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    grid-template-rows: 17rem ;
+}
+
+.item{
+    background: #dcc8dc;
+    margin: 2rem;
+}
+
+/*div {
     padding: 2rem;
     background: #dcc8dc;
     margin: 0rem 1rem 3rem;
-}
+}*/
 
 footer {
     background: #222;
