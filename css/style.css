@@ -8,7 +8,7 @@
 }
 
 #wrap {
-    width: 50%;
+    max-width: 1000px;
     margin: 0 auto;
     position: relative;
 }
@@ -18,20 +18,29 @@ header {
     /*padding: 0.5rem 8rem;*/
     text-align: center;
     color: #fff;
-    padding: 3.5rem;
+    padding: 5rem;
 }
 
 h1 {
-    font-family: serif;
+    font-family: 'Oswald', sans-serif;
+    font-size: xx-large;
 }
 
-ul.main-nav{
+nav {
+    position: sticky;
+    top: 0;
+}
+
+ul.main-nav {
     background: #222;
     border-width: 0.1rem 0rem 0rem 0rem;
     border-style: solid;
     border-color: #fff;
     justify-content: center;
     display:flex;
+    z-index: 999;/*最前面へ*/
+    left:0;/*位置指定*/
+    font-family: 'Oswald', sans-serif;
 }
 
 ul.main-nav li {
@@ -54,13 +63,25 @@ ul.main-nav a {
 h2 {
     /*padding: 1rem 1rem;*/
     /*text-align:center;*/
-    margin: 1rem 1rem 0rem
+    margin: 0rem 1rem 0.5rem;
+    padding-top: 2.5rem;
+    font-family: 'Oswald', sans-serif;
 }
+
+h3 {
+    font-family: serif;
+    margin-left: 2rem;
+}
+
 article {
     padding: 2rem;
     background: #dcc8dc;
     margin: 0rem 1rem 3rem;
 }
+article p{
+    font-family: 'Zen Maru Gothic', sans-serif;
+}
+
 ul.article li {
     border-width: 0.1rem;
     border-style: solid;
@@ -71,11 +92,12 @@ ul.article li {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
-    grid-template-rows: 17rem ;
+    grid-template-rows: 17rem;
+    margin-bottom: 20px;
 }
 
 .item{
-    background: #dcc8dc;
+    background: #dddddd;
     margin: 2rem;
 }
 
