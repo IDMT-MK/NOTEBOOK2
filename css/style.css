@@ -14,7 +14,12 @@
 }
 
 header {
-    background: #222;
+    background: url(images/Pen-Plan.jpg);
+    background-size: 80%;
+    min-height: 30vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    /*background: #222;*/
     /*padding: 0.5rem 8rem;*/
     text-align: center;
     color: #fff;
@@ -64,7 +69,7 @@ h2 {
     /*padding: 1rem 1rem;*/
     /*text-align:center;*/
     margin: 0rem 1rem 0.5rem;
-    padding-top: 2.5rem;
+    padding-top: 4rem;
     font-family: 'Oswald', sans-serif;
 }
 
@@ -77,6 +82,7 @@ article {
     padding: 2rem;
     background: #dcc8dc;
     margin: 0rem 1rem 3rem;
+    
 }
 article p{
     font-family: 'Zen Maru Gothic', sans-serif;
@@ -88,17 +94,13 @@ ul.article li {
     border-color: #222;
 }
 
+
 .container{
-    display: grid;
+    /*display: grid;*/
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
     grid-template-rows: 17rem;
     margin-bottom: 20px;
-}
-
-.item{
-    background: #dddddd;
-    margin: 2rem;
 }
 
 /*div {
